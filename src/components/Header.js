@@ -5,14 +5,14 @@ export default function Header() {
   return (
     <>
       {" "}
-      <Navbar id="navbar" bg="dark">
+      <Navbar id="navbar" variant="dark" className="col">
         <Container>
-          <Navbar.Brand href="/">Kayla Fischer</Navbar.Brand>
-          <Nav>
-            <Nav.Link href="/about">About</Nav.Link>
-            <Nav.Link href="/portfolio">Portfolio</Nav.Link>
-            <Nav.Link href="/contact">Contact me</Nav.Link>
-            <Nav.Link href="/resume">Resume</Nav.Link>
+          <Navbar.Brand>Kayla Fischer</Navbar.Brand>
+          <Nav className="row">
+            <Nav.Link href="/about" style={{textDecoration: 'none'}} className="col">About</Nav.Link>
+            <Nav.Link href="/portfolio" style={{textDecoration: 'none'}} className="col">Portfolio</Nav.Link>
+            <Nav.Link href="/contact" style={{textDecoration: 'none'}} className="col">Contact</Nav.Link>
+            <Nav.Link href="/resume" style={{textDecoration: 'none'}} className="col">Resume</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
