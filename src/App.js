@@ -1,9 +1,15 @@
 import "./App.css";
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Portfolio from "./components/Portfolio";
-import Contact from "./components/Contact";
-import Resume from "./components/Resume";
+import {
+  Header,
+  Home,
+  About,
+  Portfolio,
+  Contact,
+  Resume,
+  Footer,
+} from "./components";
 
 function App() {
   return (
