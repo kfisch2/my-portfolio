@@ -16,7 +16,7 @@ function App() {
   const [currentPage, setCurrentPage] = useState(page[0]);
 
   return (
-    <div>
+    <>
       <Header
         page={page}
         setCurrentPage={setCurrentPage}
@@ -26,7 +26,7 @@ function App() {
         <Page currentPage={currentPage}></Page>
       </main>
       <Footer />
-    </div>
+    </>
   );
 }
 

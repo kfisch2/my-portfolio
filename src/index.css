@@ -3,26 +3,14 @@ main {
 }
 
 body {
-  margin: auto;
   background-color: #000e22;
   color: aliceblue;
   font-weight: lighter;
   text-align: center;
 }
 
-header {
-  justify-content: space-between;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
 .my-name {
   text-align: left;
-}
-
-h5 {
-  font-weight: lighter;
-  margin-left: 20px;
 }
 
 nav {
@@ -30,15 +18,13 @@ nav {
   padding-bottom: 10px;
 }
 
-.nav-item {
+.links {
   color: rgba(255, 255, 255, 0.8);
   background-color: #000e22;
-  font-weight: normal;
-  text-transform: uppercase;
   transition: all 0.2s ease-in-out;
 }
 
-.nav-item:hover {
+.links:hover {
   color: rgba(255, 255, 255, 1);
   background-color: #000e22;
   box-shadow: 0 5px 10px rgba(145, 92, 182, 0.4);
@@ -46,17 +32,14 @@ nav {
   cursor: pointer;
 }
 
-h3 {
-  margin-top: 15px;
-}
-
 footer {
   text-align: center;
-  margin-top: 25px;
+  font-size: 30px;
+  justify-content: space-between;
 }
 
 footer a {
-  text-decoration: none;
+  padding: 10px;
 }
 
 textarea {

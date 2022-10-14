@@ -18,7 +18,7 @@ function Header(props) {
         <Navbar className="flex-row row">
           {page.map((Page) => (
             <li
-              className={`col ${
+              className={`mx-5 links col ${
                 currentPage.name === Page.name && 'navActive'
                 }`}
               key={Page.name}

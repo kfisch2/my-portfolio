@@ -12,14 +12,12 @@ export default function Footer(props) {
     },
   ];
   return (
-    <>
+    <footer>
       {urls.map((url) => (
-        <div key={url.name} className="row no-decoration" >
-          <a className="col" href={url.link} target="_blank" rel="noreferrer" style={{textDecoration: 'none'}}>
+          <a key={url.name} className="links" href={url.link} target="_blank" rel="noreferrer" style={{textDecoration: 'none'}}>
             {url.name}
           </a>
-        </div>
       ))}
-    </>
+    </footer>
   );
 }
