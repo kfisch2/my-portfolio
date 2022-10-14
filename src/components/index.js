@@ -6,5 +6,7 @@ import Project from "./Projects";
 import Portfolio from "./Portfolio";
 import About from './About'
 import Resume from "./Resume";
+import Page from './Page'
+import PageContent from './PageContent'
 
-export { Home, Header, Contact, Footer, Project, Portfolio, About, Resume };
+export { Home, Header, Contact, Footer, Project, Portfolio, About, Resume, Page, PageContent };

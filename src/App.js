@@ -1,33 +1,32 @@
-import "./App.css";
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import {
-  Header,
-  Home,
-  About,
-  Portfolio,
-  Contact,
-  Resume,
-  Footer,
-} from "./components";
+import React, { useState } from "react";
+import { Header, Page, Footer } from "./components";
 
 function App() {
+  const [page] = useState([
+    {
+      name: "about",
+    },
+    { name: "portfolio" },
+    { name: "contact" },
+    {
+      name: "resume",
+    },
+  ]);
+
+  const [currentPage, setCurrentPage] = useState(page[0]);
+
   return (
-    <Router>
-      <div className="flex-colum justify-flex-start min-100-vh">
-        <Header />
-        <div className="page-height container">
-          <Routes>
-            <Route path={"/"} element={<Home />} />
-            <Route path={"/about"} element={<About />} />
-            <Route path={"/portfolio"} element={<Portfolio />} />
-            <Route path={"/contact"} element={<Contact />} />
-            <Route path={"/resume"} element={<Resume />} />
-          </Routes>
-        </div>
-        <Footer/>
-      </div>
-    </Router>
+    <div>
+      <Header
+        page={page}
+        setCurrentPage={setCurrentPage}
+        currentPage={currentPage}
+      ></Header>
+      <main>
+        <Page currentPage={currentPage}></Page>
+      </main>
+      <Footer />
+    </div>
   );
 }
 

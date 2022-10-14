@@ -8,7 +8,6 @@ body {
   color: aliceblue;
   font-weight: lighter;
   text-align: center;
-
 }
 
 header {
@@ -32,16 +31,19 @@ nav {
 }
 
 .nav-item {
-  color: aliceblue;
-  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #000e22;
   font-weight: normal;
   text-transform: uppercase;
-  margin: 5px;
+  transition: all 0.2s ease-in-out;
 }
 
 .nav-item:hover {
-  color: rgb(89, 18, 104);
-  text-shadow: 5px 5px 15px;
+  color: rgba(255, 255, 255, 1);
+  background-color: #000e22;
+  box-shadow: 0 5px 10px rgba(145, 92, 182, 0.4);
+  box-sizing: content-box;
+  cursor: pointer;
 }
 
 h3 {
@@ -79,7 +81,7 @@ input {
   margin: 10px 0;
   margin-left: 5px;
   border-radius: 3px;
-
+  transition: box-shadow 0.2s;
 }
 
 li {
@@ -114,12 +116,6 @@ li {
   margin-bottom: 50px;
 }
 
-.skills {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 500px;
-}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

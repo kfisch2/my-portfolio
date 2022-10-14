@@ -1,21 +1,38 @@
-import React from "react";
-import { Container, Nav, Navbar } from "react-bootstrap";
+import React, { useEffect } from 'react';
+import { capitalizeFirstLetter } from '../utils/helpers';
+import { Navbar, Nav, Container } from 'react-bootstrap'
 
-export default function Header() {
-  return (
-    <>
-      {" "}
-      <Navbar id="navbar" variant="dark" className="col">
-        <Container>
-          <Navbar.Brand>Kayla Fischer</Navbar.Brand>
-          <Nav className="row">
-            <Nav.Link href="/about" style={{textDecoration: 'none'}} className="col">About</Nav.Link>
-            <Nav.Link href="/portfolio" style={{textDecoration: 'none'}} className="col">Portfolio</Nav.Link>
-            <Nav.Link href="/contact" style={{textDecoration: 'none'}} className="col">Contact</Nav.Link>
-            <Nav.Link href="/resume" style={{textDecoration: 'none'}} className="col">Resume</Nav.Link>
-          </Nav>
-        </Container>
-      </Navbar>
-    </>
+function Header(props) {
+  const {
+    page = [],
+    setCurrentPage,
+    currentPage,
+  } = props;
+
+  useEffect(() => {
+    document.title = capitalizeFirstLetter(currentPage.name);
+  }, [currentPage]);
+
+  return (    
+      <Container className="col">
+        <Navbar className="flex-row row">
+          {page.map((Page) => (
+            <li
+              className={`col ${
+                currentPage.name === Page.name && 'navActive'
+                }`}
+              key={Page.name}
+            >
+              <span
+                onClick={() => setCurrentPage(Page)}
+              >
+                {capitalizeFirstLetter(Page.name)}
+              </span>
+            </li>
+          ))}
+        </Navbar>
+      </Container>
   );
 }
+
+export default Header;
