@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { capitalizeFirstLetter } from '../utils/helpers';
-import { Navbar, Nav, Container } from 'react-bootstrap'
+import { nav, Nav, Container } from 'react-bootstrap'
 
 function Header(props) {
   const {
@@ -14,8 +14,8 @@ function Header(props) {
   }, [currentPage]);
 
   return (    
-      <Container className="col">
-        <Navbar className="flex-row row">
+      <Container className="col flex-row">
+        <nav className=" row">
           {page.map((Page) => (
             <li
               className={`mx-5 links col ${
@@ -30,7 +30,7 @@ function Header(props) {
               </span>
             </li>
           ))}
-        </Navbar>
+        </nav>
       </Container>
   );
 }

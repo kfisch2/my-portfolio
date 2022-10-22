@@ -28,9 +28,13 @@ export default function ContactForm() {
       }
     }
 
-    if (e.target.name === "message" || e.target.name === "email" || e.target.name === "name") {
+    if (
+      e.target.name === "message" ||
+      e.target.name === "email" ||
+      e.target.name === "name"
+    ) {
       if (e.target.value.length === 0) {
-        setErrorMessage("All fields are required")
+        setErrorMessage("All fields are required");
       }
     }
 
@@ -48,47 +52,52 @@ export default function ContactForm() {
 
   const { name, email, message } = formState;
   return (
-    <section className="contact-form">
-      <h1>Contact me</h1>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <input
-            type="text"
-            name="name"
-            defaultValue={name}
-            onBlur={handleChange}
-            placeholder="Name"
-          />
-        </div>
-        <div>
-          <input
-            type="email"
-            name="email"
-            placeholder="Email"
-            defaultValue={email}
-            onBlur={handleChange}
-          />
-        </div>
-        <div>
-          <textarea
-            cols="5"
-            rows="2"
-            type="message"
-            name="message"
-            placeholder="Message"
-            defaultValue={message}
-            onBlur={handleChange}
-          />
-        </div>
-        {errorMessage && (
-          <div>
-            <p className="error-text">{errorMessage}</p>
-          </div>
-        )}
-        <button type="submit" id="submitBtn">
-          Submit
-        </button>
-      </form>
-    </section>
+    // <section className="contact-form">
+    //   <h1>Contact me</h1>
+    //   <form onSubmit={handleSubmit}>
+    //     <div>
+    //       <input
+    //         type="text"
+    //         name="name"
+    //         defaultValue={name}
+    //         onBlur={handleChange}
+    //         placeholder="Name"
+    //       />
+    //     </div>
+    //     <div>
+    //       <input
+    //         type="email"
+    //         name="email"
+    //         placeholder="Email"
+    //         defaultValue={email}
+    //         onBlur={handleChange}
+    //       />
+    //     </div>
+    //     <div>
+    //       <textarea
+    //         cols="5"
+    //         rows="2"
+    //         type="message"
+    //         name="message"
+    //         placeholder="Message"
+    //         defaultValue={message}
+    //         onBlur={handleChange}
+    //       />
+    //     </div>
+    //     {errorMessage && (
+    //       <div>
+    //         <p className="error-text">{errorMessage}</p>
+    //       </div>
+    //     )}
+    //     <button type="submit" id="submitBtn">
+    //       Submit
+    //     </button>
+    //   </form>
+    // </section>
+    <div>
+      <br></br>
+      Email me <a href="mailto:kmlindsey24@gmail.com">here!</a>
+      <br></br>Contact form coming soon.
+    </div>
   );
 }
