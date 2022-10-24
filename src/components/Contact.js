@@ -94,10 +94,10 @@ export default function ContactForm() {
     //     </button>
     //   </form>
     // </section>
-    <div>
+    <h2 className="contact">
       <br></br>
       Email me <a href="mailto:kmlindsey24@gmail.com">here!</a>
       <br></br>Contact form coming soon.
-    </div>
+    </h2>
   );
 }

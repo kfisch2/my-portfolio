@@ -6,23 +6,22 @@ export default function Projects({ project }) {
   return (
     <>
       <img src={photo} className="d-block w-100" alt={name} />
-      <div className="carousel-caption d-none d-md-block">
+      <div className="carousel-caption d-md-block ">
         <a
           href={deploy}
           target="_blank"
           rel="noreferrer"
           style={{ textDecoration: "none", color: "white" }}
-          className="links"
+          className="links project-link"
         >
           Deployed
         </a>
-        <br></br>
         <a
           href={github}
           target="_blank"
           rel="noreferrer"
           style={{ textDecoration: "none", color: "white" }}
-          className="links"
+          className="links project-link"
         >
           Github
         </a>

@@ -14,8 +14,9 @@ function Header(props) {
   }, [currentPage]);
 
   return (    
-      <Container className="col flex-row">
-        <nav className=" row">
+      <Container className="col flex-row header">
+        <nav className="row">
+          <h1 className='my-name'>Kayla Fischer</h1>
           {page.map((Page) => (
             <li
               className={`mx-5 links col ${

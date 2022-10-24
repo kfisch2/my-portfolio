@@ -2,6 +2,10 @@ main {
   min-height: calc(100vh - 72px - 105px);
 }
 
+.header {
+  margin-bottom: 100px;
+}
+
 body {
   background-color: #000e22;
   color: aliceblue;
@@ -11,8 +15,14 @@ body {
 
 .my-name {
   text-align: left;
+  font-family: "Estonia", "cursive";
+  font-size: 50px;
 }
 
+.contact {
+  font-weight: lighter;
+
+}
 nav {
   font-size: x-large;
   padding-bottom: 10px;
@@ -28,8 +38,13 @@ nav {
   color: rgba(255, 255, 255, 1);
   background-color: #000e22;
   box-shadow: 0 5px 10px rgba(145, 92, 182, 0.4);
-  box-sizing: inherit;
   cursor: pointer;
+}
+
+.project-link {
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 25px;
 }
 
 footer {
@@ -72,6 +87,9 @@ li {
   font-weight: lighter;
 }
 
+.carousel-item {
+  width: 100vw;
+}
 .carousel-item img {
   max-width: 45%;
   max-height: 45%;
