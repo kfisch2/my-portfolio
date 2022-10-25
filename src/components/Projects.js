@@ -5,21 +5,14 @@ export default function Projects({ project }) {
   const { name, description, photo, deploy, github } = project;
 
   const [show, setShow] = useState(false);
-
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  const handleClick = () => {};
-
   return (
     <>
-      <Modal
-        className="modal"
-        show={show}
-        onHide={handleClose}
-      >
-        <Modal.Header closeButton >
-          <Modal.Title className="modal-header">{name}</Modal.Title>
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>{name}</Modal.Title>
         </Modal.Header>
         <Modal.Body className="modal-body">{description} </Modal.Body>
         <Modal.Footer>
