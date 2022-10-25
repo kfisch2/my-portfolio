@@ -3,12 +3,12 @@ import React from "react";
 export default function Resume() {
   return (
     <div>
-      <h3>Skills</h3>
+      <h1>Skills</h1>
       <br></br>
       <div className="row">
         <div className="col"></div>
         <div className="col">
-          <h4>Front-end</h4>
+          <h2>Front-end</h2>
           <li>HTML</li>
           <li>CSS</li>
           <li>Javascript/jQuery</li>
@@ -18,7 +18,7 @@ export default function Resume() {
           <li>Materialize</li>
         </div>
         <div className="col">
-          <h4>Back-end</h4>
+          <h2>Back-end</h2>
           <li>APIs</li>
           <li>Node</li>
           <li>Express</li>
@@ -30,7 +30,8 @@ export default function Resume() {
         <div className="col"></div>
       </div>
       <br></br>
-      <h3>Resume coming soon</h3>
+      <br></br>
+      <h2>Resume coming soon</h2>
     </div>
   );
 }
