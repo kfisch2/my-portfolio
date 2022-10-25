@@ -18,7 +18,6 @@ body {
 
 .contact {
   font-weight: lighter;
-
 }
 nav {
   font-size: x-large;
@@ -84,19 +83,25 @@ li {
   font-weight: lighter;
 }
 
-.carousel-item {
-  width: 100vw;
+.modal {
+  backdrop-filter: blur(10px);
 }
+
 .carousel-item img {
-  max-width: 45%;
-  max-height: 45%;
+  max-width: 75vw;
+  max-height: 75vh;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 100px;
   margin-top: 50px;
 }
 
-.modal-header, .modal-body {
+.carousel-item:hover {
+  cursor: pointer;
+}
+
+.modal-header,
+.modal-body {
   color: #000e22;
   font-weight: normal;
 }

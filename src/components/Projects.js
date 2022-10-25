@@ -10,9 +10,15 @@ export default function Projects({ project }) {
 
   return (
     <>
-      <Modal show={show} onHide={handleClose}>
+      {/* React Modal when user clicks on project */}
+      <Modal
+        className="modal"
+        show={show}
+        onHide={handleClose}
+        centered
+      >
         <Modal.Header closeButton>
-          <Modal.Title>{name}</Modal.Title>
+          <Modal.Title id="contained-modal-title-vcenter">{name}</Modal.Title>
         </Modal.Header>
         <Modal.Body className="modal-body">{description} </Modal.Body>
         <Modal.Footer>
@@ -27,6 +33,8 @@ export default function Projects({ project }) {
           </Button>
         </Modal.Footer>
       </Modal>
+
+      {/* carousel items */}
       <div className="project-content">
         <img
           src={photo}
