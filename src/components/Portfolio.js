@@ -11,7 +11,8 @@ export default function Portfolio() {
     {
       id: 0,
       name: "Genu",
-      description: "FIRST PROJECT",
+      description:
+        "Website generator for restaurants featuring a menu items with photos, contact information, and any additional details they wish to include. The user will be provided with a unique link to their restaurant's website!",
       photo: genu,
       deploy: "https://codetrip-33a81.web.app/",
       github: "https://github.com/Hephaestus01/codetrip-project-3",
@@ -19,23 +20,26 @@ export default function Portfolio() {
     {
       id: 1,
       name: "Rhythm In Region",
-      description: "SECOND PROJECT",
+      description:
+        "Want to go to a concert but unsure who to see? Look up concerts near you by genre!",
       photo: rIr,
       deploy: "https://bin-ostrowski.github.io/rhythm-in-region/",
       github: "https://github.com/kfisch2/rhythm-in-region",
     },
     {
       id: 2,
-      name: "dose",
-      description: "THIRD PROJECT",
+      name: "Dose",
+      description:
+        "Prescription tracker that allows a user to create a username to login to their personalized dashbaord. The user may enter the cost, prescribed date, and refill date for each prescription. The user may also choose to receive text message notifications when they need to refill their prescription! ",
       photo: dose,
       deploy: "https://cryptic-inlet-45736.herokuapp.com/",
       github: "https://github.com/kfisch2/dose",
     },
     {
       id: 3,
-      name: "nerdherd",
-      description: "FOURTH",
+      name: "NerdHerd",
+      description:
+        "Tech blog where a user may create an account to login and contribute to threads. The user may publish articles, blog posts, thoughts, and opinions to engage with the tech community!",
       photo: nerdherd,
       deploy: "https://nerd-herd06@herokuapp.com",
       github: "https://github.com/kfisch2/nerd-herd",
@@ -43,21 +47,6 @@ export default function Portfolio() {
   ];
 
   return (
-    // <div className="container">
-    //   <div className="row">
-    //     {projects.map((project, i) => {
-    //       return (
-    //         <>
-    //           <div className="col-md">
-    //             <Projects project={project} key={i} />
-    //           </div>
-    //           <div className="w-50"></div>
-    //         </>
-    //       );
-    //     })}
-    //   </div>
-    // </div>
-
     <Carousel>
       {projects.map((project, i) => {
         return (
