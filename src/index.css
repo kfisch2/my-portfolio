@@ -84,9 +84,10 @@ li {
   font-weight: lighter;
 }
 
-.carousel-item {
-  width: 100vw;
+.modal {
+  backdrop-filter: blur(10px);
 }
+
 .carousel-item img {
   max-width: 75vw;
   max-height: 75vh;

@@ -21,7 +21,7 @@ export default function Portfolio() {
       id: 1,
       name: "Rhythm In Region",
       description:
-        "Want to go to a concert but unsure who to see? Look up concerts near you by genre!",
+        "Want to go to a concert but you aren't sure of a specific artist to see? Enter your favorite genre and your city to find concerts near you!",
       photo: rIr,
       deploy: "https://bin-ostrowski.github.io/rhythm-in-region/",
       github: "https://github.com/kfisch2/rhythm-in-region",
@@ -30,7 +30,7 @@ export default function Portfolio() {
       id: 2,
       name: "Dose",
       description:
-        "Prescription tracker that allows a user to create a username to login to their personalized dashbaord. The user may enter the cost, prescribed date, and refill date for each prescription. The user may also choose to receive text message notifications when they need to refill their prescription! ",
+        "Prescription tracker that allows a user to create a username to login to their personalized dashboard. The user may enter the cost, prescribed date, and refill date for each prescription. The user may also choose to receive text message notifications when they need to refill their prescription! ",
       photo: dose,
       deploy: "https://cryptic-inlet-45736.herokuapp.com/",
       github: "https://github.com/kfisch2/dose",
