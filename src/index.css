@@ -18,7 +18,6 @@ body {
 
 .contact {
   font-weight: lighter;
-
 }
 nav {
   font-size: x-large;
@@ -97,7 +96,12 @@ li {
   margin-top: 50px;
 }
 
-.modal-header, .modal-body {
+.carousel-item:hover {
+  cursor: pointer;
+}
+
+.modal-header,
+.modal-body {
   color: #000e22;
   font-weight: normal;
 }

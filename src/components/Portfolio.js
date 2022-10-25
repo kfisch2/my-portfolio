@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
 import Projects from "./Projects";
 import dose from "../images/dose.png";
@@ -46,8 +46,14 @@ export default function Portfolio() {
     },
   ];
 
+  {/* makes carousel controlled when modal activated? */}
+  const [index, setIndex] = useState(0);
+  const handleSelect = (selectedIndex, e) => {
+    setIndex(selectedIndex);
+  };
+
   return (
-    <Carousel>
+    <Carousel activeIndex={index} onSelect={handleSelect}>
       {projects.map((project, i) => {
         return (
           <Carousel.Item key={project.name} className={"carosel-item"}>
