@@ -46,7 +46,7 @@ export default function Portfolio() {
     },
   ];
 
-  {/* makes carousel controlled when modal activated? */}
+  {/* makes carousel controlled when modal activated */}
   const [index, setIndex] = useState(0);
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
