@@ -3,7 +3,6 @@ import React from "react";
 export default function Resume() {
   return (
     <div>
-      <h1>Skills</h1>
       <br></br>
       <div className="row">
         <div className="col"></div>

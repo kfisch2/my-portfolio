@@ -42,7 +42,7 @@ export default function Projects({ project }) {
           alt={name}
           onClick={handleShow}
         />
-        <div className="carousel-caption d-md-block ">
+        {/* <div className="carousel-caption d-md-block ">
           <a
             href={deploy}
             target="_blank"
@@ -61,7 +61,7 @@ export default function Projects({ project }) {
           >
             Github
           </a>
-        </div>
+        </div> */}
       </div>
     </>
   );
