@@ -12,7 +12,7 @@ export default function Portfolio() {
       id: 0,
       name: "Genu",
       description:
-        "Website generator for restaurants featuring a menu items with photos, contact information, and any additional details they wish to include. The user will be provided with a unique link to their restaurant's website!",
+        "Website generator for restaurants featuring menu items with photos, contact information, and any additional details they wish to include. The user will be provided with a unique link to their restaurant's website!",
       photo: genu,
       deploy: "https://codetrip-33a81.web.app/",
       github: "https://github.com/Hephaestus01/codetrip-project-3",
@@ -21,7 +21,7 @@ export default function Portfolio() {
       id: 1,
       name: "Rhythm In Region",
       description:
-        "Want to go to a concert but you aren't sure of a specific artist to see? Enter your favorite genre and your city to find concerts near you!",
+        "Want to go to a concert but you aren't sure who to see? Enter your city and favorite genre to generate a list of artists and a few samples of their music!",
       photo: rIr,
       deploy: "https://bin-ostrowski.github.io/rhythm-in-region/",
       github: "https://github.com/kfisch2/rhythm-in-region",
@@ -46,21 +46,25 @@ export default function Portfolio() {
     },
   ];
 
-  {/* makes carousel controlled when modal activated */}
+  {
+    /* makes carousel controlled when modal activated */
+  }
   const [index, setIndex] = useState(0);
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
   };
 
   return (
-    <Carousel activeIndex={index} onSelect={handleSelect}>
-      {projects.map((project, i) => {
-        return (
-          <Carousel.Item key={project.name} className={"carosel-item"}>
-            <Projects project={project} />
-          </Carousel.Item>
-        );
-      })}
-    </Carousel>
+    <>
+      <Carousel activeIndex={index} onSelect={handleSelect}>
+        {projects.map((project, i) => {
+          return (
+            <Carousel.Item key={project.name} className={"carosel-item"}>
+              <Projects project={project} />
+            </Carousel.Item>
+          );
+        })}
+      </Carousel>
+    </>
   );
 }
