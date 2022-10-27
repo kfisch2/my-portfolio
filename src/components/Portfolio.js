@@ -41,7 +41,7 @@ export default function Portfolio() {
       description:
         "Tech blog where a user may create an account to login and contribute to threads. The user may publish articles, blog posts, thoughts, and opinions to engage with the tech community!",
       photo: nerdherd,
-      deploy: "https://nerd-herd06@herokuapp.com",
+      deploy: "https://nerd-herd06.herokuapp.com/",
       github: "https://github.com/kfisch2/nerd-herd",
     },
   ];
