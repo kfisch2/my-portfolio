@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import { capitalizeFirstLetter } from '../utils/helpers';
-import { nav, Nav, Container } from 'react-bootstrap'
+import { capitalize } from '../utils/helpers';
+import { Container } from 'react-bootstrap'
 
 function Header(props) {
   const {
@@ -10,7 +10,7 @@ function Header(props) {
   } = props;
 
   useEffect(() => {
-    document.title = capitalizeFirstLetter(currentPage.name);
+    document.title = capitalize(currentPage.name);
   }, [currentPage]);
 
   return (    
@@ -27,7 +27,7 @@ function Header(props) {
               <span
                 onClick={() => setCurrentPage(Page)}
               >
-                {capitalizeFirstLetter(Page.name)}
+                {capitalize(Page.name)}
               </span>
             </li>
           ))}

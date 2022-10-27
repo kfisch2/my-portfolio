@@ -1,13 +1,15 @@
 import React from "react";
 
-export default function Resume() {
+export default function Experience() {
   return (
     <div>
+      <br></br>
+      <br></br>
       <br></br>
       <div className="row">
         <div className="col"></div>
         <div className="col">
-          <h2>Front-end</h2>
+          <h3>Front-end</h3>
           <li>HTML</li>
           <li>CSS</li>
           <li>Javascript/jQuery</li>
@@ -17,7 +19,7 @@ export default function Resume() {
           <li>Materialize</li>
         </div>
         <div className="col">
-          <h2>Back-end</h2>
+          <h3>Back-end</h3>
           <li>APIs</li>
           <li>Node</li>
           <li>Express</li>
@@ -29,8 +31,7 @@ export default function Resume() {
         <div className="col"></div>
       </div>
       <br></br>
-      <br></br>
-      <h2>Resume coming soon</h2>
+     
     </div>
   );
 }

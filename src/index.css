@@ -10,6 +10,11 @@ body {
   color: aliceblue;
 }
 
+h3 {
+  font-weight: lighter;
+  display: inline;
+}
+
 .my-name {
   text-align: left;
   font-family: "Estonia", "cursive";
