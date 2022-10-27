@@ -45,11 +45,11 @@ nav {
 }
 
 footer {
-  text-align: left;
+  text-align: center;
   position: absolute;
   bottom: 5px;
   width: 100%;
-  justify-content: space-between;;
+  justify-content: space-between;
 }
 
 footer a {
@@ -58,7 +58,15 @@ footer a {
 
 .logo {
   width: 7%;
+  filter: grayscale(70%);
+  transition: all 0.2s ease-in-out
 }
+
+.logo:hover {
+  box-shadow: 0 5px 10px rgba(145, 92, 182, 0.4);
+  filter: grayscale(0%)
+}
+
 
 textarea {
   width: 15%;
@@ -140,11 +148,11 @@ code {
     monospace;
 }
 
-/* desktop view */ 
+/* desktop view */
 @media (min-width: 768px) {
   .carousel-item img {
-    max-width: 45vw;
-    max-height: 65vh;
+    max-width: 50vw;
+    max-height: 75vh;
   }
 
   nav {
