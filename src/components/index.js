@@ -1,4 +1,3 @@
-import Home from "./Home";
 import Header from "./Header";
 import Contact from "./Contact";
 import Footer from "./Footer";
@@ -10,7 +9,6 @@ import Page from "./Page";
 import PageContent from "./PageContent";
 
 export {
-  Home,
   Header,
   Contact,
   Footer,
