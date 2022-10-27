@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.8dcb3f88.css",
-    "main.js": "/my-portfolio/static/js/main.24263de8.js",
+    "main.css": "/my-portfolio/static/css/main.ad67cc9f.css",
+    "main.js": "/my-portfolio/static/js/main.70428417.js",
+    "static/media/rIr.png": "/my-portfolio/static/media/rIr.d432516e43f9049392d0.png",
+    "static/media/genu.png": "/my-portfolio/static/media/genu.70791981b9da3a01a9b9.png",
+    "static/media/dose.png": "/my-portfolio/static/media/dose.cc5b33e91d398e9ae2dd.png",
     "static/media/portrait.jpg": "/my-portfolio/static/media/portrait.921448c4a8228a0d7451.jpg",
-    "static/media/rIr.png": "/my-portfolio/static/media/rIr.7aa8300d1b0206301efc.png",
-    "static/media/genu.png": "/my-portfolio/static/media/genu.b4603fae6e5146b07b6f.png",
-    "static/media/dose.png": "/my-portfolio/static/media/dose.9b5f86ec3117069caf02.png",
-    "static/media/nerdherd.png": "/my-portfolio/static/media/nerdherd.383906bfb0fe4646fff2.png",
+    "static/media/nerdherd.png": "/my-portfolio/static/media/nerdherd.1f04970a47d7038a8b18.png",
     "index.html": "/my-portfolio/index.html",
-    "main.8dcb3f88.css.map": "/my-portfolio/static/css/main.8dcb3f88.css.map",
-    "main.24263de8.js.map": "/my-portfolio/static/js/main.24263de8.js.map"
+    "main.ad67cc9f.css.map": "/my-portfolio/static/css/main.ad67cc9f.css.map",
+    "main.70428417.js.map": "/my-portfolio/static/js/main.70428417.js.map"
   },
   "entrypoints": [
-    "static/css/main.8dcb3f88.css",
-    "static/js/main.24263de8.js"
+    "static/css/main.ad67cc9f.css",
+    "static/js/main.70428417.js"
   ]
 }
