@@ -94,9 +94,21 @@ export default function ContactForm() {
     //     </button>
     //   </form>
     // </section>
-    <h3 className="contact">
-      <br></br>
-      Email me <a href="mailto:kmlindsey24@gmail.com">here!</a>
-    </h3>
+    <>
+      {" "}
+      <h3 className="contact">
+        Email me at{" "}
+        <a href="mailto:kmlindsey24@gmail.com">kmlindsey24@gmail.com</a>
+      </h3>
+      <h3>
+        Connect with me on my{" "}
+        <a
+          href="https://www.linkedin.com/in/kayla-fischer-679200109/"
+          target={"_blank"}
+        >
+          LinkedIn
+        </a>
+      </h3>
+    </>
   );
 }

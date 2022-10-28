@@ -12,7 +12,6 @@ body {
 
 h3 {
   font-weight: lighter;
-  display: inline;
 }
 
 .my-name {
@@ -24,12 +23,17 @@ h3 {
 
 .contact {
   font-weight: lighter;
+  margin-top: 150px;
 }
 nav {
   font-size: large;
   padding-bottom: 0px;
 }
-
+.header-row {
+  flex-direction: column;
+  margin-right: 70px;
+  text-align: center;
+}
 .links {
   color: rgba(255, 255, 255, 0.8);
   background-color: #000e22;
@@ -41,6 +45,7 @@ nav {
   background-color: #000e22;
   box-shadow: 0 5px 10px rgba(145, 92, 182, 0.4);
   cursor: pointer;
+  display: inline;
 }
 
 .project-link {
@@ -54,7 +59,6 @@ footer {
   position: absolute;
   bottom: 5px;
   width: 100%;
-  justify-content: space-between;
 }
 
 footer a {
@@ -64,14 +68,13 @@ footer a {
 .logo {
   width: 7%;
   filter: grayscale(70%);
-  transition: all 0.2s ease-in-out
+  transition: all 0.2s ease-in-out;
 }
 
 .logo:hover {
   box-shadow: 0 5px 10px rgba(145, 92, 182, 0.4);
-  filter: grayscale(0%)
+  filter: grayscale(0%);
 }
-
 
 textarea {
   width: 15%;
@@ -107,6 +110,9 @@ li {
   backdrop-filter: blur(10px);
 }
 
+.carousel {
+  margin-top: 50px;
+}
 .carousel-indicators button {
   display: none;
 }
@@ -131,14 +137,12 @@ li {
 }
 
 .about {
-  margin-top: 50px;
-  justify-content: space-evenly;
-}
-
-.about div {
+  font-size: x-large;
   color: aliceblue;
-  margin-right: 50px;
-  margin-left: 50px;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 55px;
 }
 
 .about img {
@@ -158,6 +162,10 @@ code {
   .carousel-item img {
     max-width: 50vw;
     max-height: 75vh;
+  }
+
+  .row {
+    flex-direction: row;
   }
 
   nav {
