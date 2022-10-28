@@ -101,7 +101,7 @@ export default function ContactForm() {
         <a href="mailto:kmlindsey24@gmail.com">kmlindsey24@gmail.com</a>
       </h3>
       <h3>
-        Connect with me on my{" "}
+        Connect with me on{" "}
         <a
           href="https://www.linkedin.com/in/kayla-fischer-679200109/"
           target={"_blank"}

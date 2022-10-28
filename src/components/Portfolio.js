@@ -63,6 +63,7 @@ export default function Portfolio() {
           );
         })}
       </Carousel>
+      <h3>Click on the image to view project details and links</h3>
     </>
   );
 }

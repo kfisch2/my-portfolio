@@ -9,8 +9,7 @@ export default function About() {
         I'm Kayla, a recent graduate from the University of Oregon Web
         Development Bootcamp. I have a background in mathematics, Japanese, and
         teaching. Check out my previous projects in my portfolio, reach out to
-        me on LinkedIn, or visit my github. Currently exploring software engineer 
-        and web development jobs!
+        me on LinkedIn, or check out my code on github!
       </div>
     </div>
   );
