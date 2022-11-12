@@ -55,10 +55,11 @@ nav {
 }
 
 footer {
-  text-align: center;
+  text-align: left;
   position: absolute;
   bottom: 5px;
   width: 100%;
+  margin-top: 5px;
 }
 
 footer a {
@@ -66,7 +67,7 @@ footer a {
 }
 
 .logo {
-  width: 7%;
+  width: 4%;
   filter: grayscale(70%);
   transition: all 0.2s ease-in-out;
 }
@@ -178,8 +179,8 @@ code {
 
   .about div {
     font-size: x-large;
-    margin-left: 170px;
-    margin-right: 170px;
+    margin-left: 100px;
+    margin-right: 100px;
   }
 
   footer {
