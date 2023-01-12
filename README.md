@@ -1,6 +1,6 @@
 # React Portfolio
 
-## Currently under construction, but you can still view my previous work
+## Currently being updated/upgraded, but you can still view my previous work
 
 ## Description
 
