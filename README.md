@@ -1,5 +1,7 @@
 # React Portfolio
 
+## Currently under construction, but you can still view my previous work
+
 ## Description
 
 This portfolio was built with react and bootstrap. You can find my contact information, linkedIn, and a few projects I have built with various team members. 
