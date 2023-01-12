@@ -42,26 +42,6 @@ export default function Projects({ project }) {
           alt={name}
           onClick={handleShow}
         />
-        {/* <div className="carousel-caption d-md-block ">
-          <a
-            href={deploy}
-            target="_blank"
-            rel="noreferrer"
-            style={{ textDecoration: "none", color: "white" }}
-            className="links project-link"
-          >
-            Deployed
-          </a>
-          <a
-            href={github}
-            target="_blank"
-            rel="noreferrer"
-            style={{ textDecoration: "none", color: "white" }}
-            className="links project-link"
-          >
-            Github
-          </a>
-        </div> */}
       </div>
     </>
   );

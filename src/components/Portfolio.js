@@ -1,5 +1,3 @@
-import React, { useState } from "react";
-import Carousel from "react-bootstrap/Carousel";
 import Projects from "./Projects";
 import dose from "../images/dose.png";
 import rIr from "../images/rIr.png";
@@ -46,23 +44,26 @@ export default function Portfolio() {
     },
   ];
 
-  /* makes carousel controlled when modal activated */
-  const [index, setIndex] = useState(0);
-  const handleSelect = (selectedIndex, e) => {
-    setIndex(selectedIndex);
-  };
+  // /* makes carousel controlled when modal activated */
+  // const [index, setIndex] = useState(0);
+  // const handleSelect = (selectedIndex, e) => {
+  //   setIndex(selectedIndex);
+  // };
 
   return (
     <>
-      <Carousel activeIndex={index} onSelect={handleSelect}>
-        {projects.map((project, i) => {
-          return (
-            <Carousel.Item key={project.name} className={"carosel-item"}>
-              <Projects project={project} />
-            </Carousel.Item>
-          );
-        })}
-      </Carousel>
+      {projects.map((project, i) => {
+        return (
+          <div className="col">
+            <div className="row">
+              <div className="col">
+                <Projects project={project} key={project.name} />
+              </div>
+            </div>
+          </div>
+        );
+      })}
+
       <h3>Click on the image to view project details and links</h3>
     </>
   );
