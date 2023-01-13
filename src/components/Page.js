@@ -2,7 +2,7 @@ import About from "./About";
 import Portfolio from "./Portfolio";
 import Contact from "./Contact";
 import PageContent from "./PageContent";
-import Experience from "./Experience";
+import Resume from "./Resume";
 
 export default function Page({ currentPage }) {
   const renderPage = () => {
@@ -14,7 +14,7 @@ export default function Page({ currentPage }) {
       case "contact":
         return <Contact />;
       case "experience":
-        return <Experience />;
+        return <Resume />;
       default:
         return <About />;
     }

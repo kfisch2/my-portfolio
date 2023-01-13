@@ -9,7 +9,7 @@ function App() {
     { name: "portfolio" },
     { name: "contact" },
     {
-      name: "experience",
+      name: "resume",
     },
   ]);
 

@@ -94,7 +94,7 @@ export default function ContactForm() {
     //     </button>
     //   </form>
     // </section>
-    <>
+    <div className="contact-div">
       {" "}
       <h3 className="contact">
         Email me at{" "}
@@ -109,6 +109,6 @@ export default function ContactForm() {
           LinkedIn
         </a>
       </h3>
-    </>
+    </div>
   );
 }

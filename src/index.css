@@ -4,29 +4,33 @@
 } */
 
 * {
-  --primary: #6b9457;
+  --primary: rgb(107, 148, 87);
   --secondary: rgb(255, 255, 255);
   --tertiary: #343E3D;
 
 }
+
 body {
-  /* background-color: var(--primary); */  
   font-weight: lighter;
   text-align: center;
   color: var(--secondary);
   background-image: url("https://thumbs.dreamstime.com/b/green-moss-bokeh-background-sunset-light-hd-image-large-resolution-can-be-used-as-wallpaper-web-banners-consepts-188695665.jpg");
   background-image: linear-gradient( 
-  rgba(0,0,0,0.7) 20%, 
-  rgba(0,0,0,0) 30%,
-  rgba(0,0,0,0) 50%,
-  rgba(0,0,0,0.9) 80%), url("https://thumbs.dreamstime.com/b/green-moss-bokeh-background-sunset-light-hd-image-large-resolution-can-be-used-as-wallpaper-web-banners-consepts-188695665.jpg");
+  rgba(0, 0, 0, 0.877) 50%, 
+  rgba(0, 0, 0, 0.651) 10%,
+  rgba(0, 0, 0, 0.877) 50%,
+  rgba(0,0,0,0.7) 100%), url("https://thumbs.dreamstime.com/b/green-moss-bokeh-background-sunset-light-hd-image-large-resolution-can-be-used-as-wallpaper-web-banners-consepts-188695665.jpg");
   background-attachment: fixed;
   background-size: cover;
 }
 
-.page {
-  background: linear-gradient(rgb(99, 206, 125), rgb(48, 90, 61));
 
+.page {
+  /* background: linear-gradient( 
+  rgba(107, 148, 87, 0) 0%, 
+  rgb(87, 119, 69) 2%,
+  rgb(87, 119, 69) 99%,
+  rgba(107, 148, 87, 0) 100%); */
 }
 
 h3 {
@@ -40,7 +44,7 @@ h3 {
   color: var(--secondary);
 }
 
-.contact {
+.contact-div {
   font-weight: lighter;
   margin-top: 150px;
 }
@@ -58,7 +62,6 @@ nav {
 
 .links {
   color: var(--secondary);
-  background-color: var(--primary);
   transition: all 0.2s ease-in-out;
 }
 
@@ -83,11 +86,10 @@ nav {
   transform: scaleX(-1);
   margin-right: 20px;
   margin-left: 100px;
-
 }
 
 .about div {
-  font-size: x-large;
+  font-size: large;
   margin-left: 75px;
   margin-right: 100px;
   
@@ -147,6 +149,14 @@ input {
   transition: box-shadow 0.2s;
 }
 
+.experience {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
 li {
   list-style: none;
   font-weight: lighter;
@@ -162,6 +172,15 @@ li {
   font-weight: normal;
 }
 
+a {
+  text-decoration: none;
+  color: var(--secondary);
+}
+
+a:hover {
+  color: var(--primary);
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -170,11 +189,11 @@ code {
 
 
 
-@media (max-width: 768px) {
-  /* .carousel-item img {
+/* @media (max-width: 768px) {
+  .carousel-item img {
     max-width: 30vw;
     max-height: 45vh;
-  } */
+  }
 
   .row {
     flex-direction: column;
@@ -202,4 +221,4 @@ code {
   .logo {
     width: 3%;
   }
-}
+} */

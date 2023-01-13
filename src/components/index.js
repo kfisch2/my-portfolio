@@ -4,7 +4,7 @@ import Footer from "./Footer";
 import Project from "./Projects";
 import Portfolio from "./Portfolio";
 import About from "./About";
-import Experience from "./Experience";
+import Resume from "./Resume";
 import Page from "./Page";
 import PageContent from "./PageContent";
 
@@ -15,7 +15,7 @@ export {
   Project,
   Portfolio,
   About,
-  Experience,
+  Resume,
   Page,
   PageContent,
 };
