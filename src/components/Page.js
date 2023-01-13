@@ -13,7 +13,7 @@ export default function Page({ currentPage }) {
         return <Portfolio />;
       case "contact":
         return <Contact />;
-      case "experience":
+      case "resume":
         return <Resume />;
       default:
         return <About />;

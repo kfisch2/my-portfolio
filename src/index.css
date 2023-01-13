@@ -86,6 +86,9 @@ nav {
   transform: scaleX(-1);
   margin-right: 20px;
   margin-left: 100px;
+  border-radius: 5px;
+  background: var(--tertiary);
+  padding: 10px;
 }
 
 .about div {
