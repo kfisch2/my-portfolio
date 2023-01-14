@@ -44,27 +44,18 @@ export default function Portfolio() {
     },
   ];
 
-  // /* makes carousel controlled when modal activated */
-  // const [index, setIndex] = useState(0);
-  // const handleSelect = (selectedIndex, e) => {
-  //   setIndex(selectedIndex);
-  // };
-
   return (
-    <>
+    <div className="projects-container">
       {projects.map((project, i) => {
         return (
-          <div className="col">
-            <div className="row">
-              <div className="col">
-                <Projects project={project} key={project.name} />
-              </div>
-            </div>
+          <div>
+            <Projects
+              project={project}
+              key={project.name}
+            />
           </div>
         );
       })}
-
-      <h3>Click on the image to view project details and links</h3>
-    </>
+    </div>
   );
 }

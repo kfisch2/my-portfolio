@@ -22,9 +22,9 @@ function App() {
         setCurrentPage={setCurrentPage}
         currentPage={currentPage}
       ></Header>
-      <div className="page">
+      <main className="page-content">
         <Page currentPage={currentPage}></Page>
-      </div>
+      </main>
       <Footer />
     </>
   );
