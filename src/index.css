@@ -27,26 +27,26 @@ h3 {
 }
 
 .header {
-  /* z-index: 999999; */
   display: flex;
   flex-direction: row;
   position: fixed;
   top: 0;
   width: 100%;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.747), rgba(0, 0, 0, 0.904)),
     url("https://thumbs.dreamstime.com/b/green-moss-bokeh-background-sunset-light-hd-image-large-resolution-can-be-used-as-wallpaper-web-banners-consepts-188695665.jpg");
-
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
 
 .page-content {
-  padding: calc(12%);
+  margin-top: 20px;
+  padding: calc(13%);
 }
 
+/* To add later*/ 
 /* .page-title {
   width: 100%;
   padding: 10px;
@@ -94,7 +94,7 @@ h3 {
 }
 
 /*WAITING ON HEROKU CREDITS*/
-.NerdHerd,
+/*deploy buttons for heroku-hosted projects*/
 .Dose {
   display: none;
 }
@@ -164,7 +164,7 @@ input {
   transition: box-shadow 0.2s;
 }
 
-.contact-div {
+.contact-section {
   font-weight: lighter;
   margin: 50px 0px;
 }

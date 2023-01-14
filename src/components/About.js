@@ -3,7 +3,7 @@ import portrait from "../images/portrait2.jpg";
 
 export default function About() {
   return (
-    <div className="about">
+    <section className="about">
       <div>
         {" "}
         <img className="portrait" src={portrait} alt="Portrait of Kayla"></img>
@@ -18,6 +18,6 @@ export default function About() {
         previous projects in my portfolio, reach out to me on LinkedIn, or visit
         my github!
       </div>
-    </div>
+    </section>
   );
 }
