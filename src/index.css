@@ -33,7 +33,7 @@ h3 {
   position: fixed;
   top: 0;
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.747), rgba(0, 0, 0, 0.904)),
     url("https://thumbs.dreamstime.com/b/green-moss-bokeh-background-sunset-light-hd-image-large-resolution-can-be-used-as-wallpaper-web-banners-consepts-188695665.jpg");
@@ -44,14 +44,18 @@ h3 {
 }
 
 .page-content {
-  /* padding-top: calc(12%); */
   padding: calc(12%);
 }
 
-.contact-div {
-  font-weight: lighter;
-  margin: 50px 0px;
-}
+/* .page-title {
+  width: 100%;
+  padding: 10px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.267), rgba(0, 0, 0, 0.096)),
+    url("https://thumbs.dreamstime.com/b/green-moss-bokeh-background-sunset-light-hd-image-large-resolution-can-be-used-as-wallpaper-web-banners-consepts-188695665.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+} */
 
 .links {
   color: var(--secondary);
@@ -117,7 +121,7 @@ h3 {
 }
 
 .description {
-  font-size: x-large;
+  font-size: large;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -135,17 +139,6 @@ h3 {
 .technologies {
   font-size: large;
   color: var(--secondary);
-}
-
-.logo {
-  width: 3%;
-  filter: grayscale(70%);
-  transition: all 0.2s ease-in-out;
-}
-
-.logo:hover {
-  box-shadow: 0 5px 10px var(--tertiary);
-  filter: grayscale(0%);
 }
 
 textarea {
@@ -169,6 +162,11 @@ textarea {
 input {
   border-radius: 3px;
   transition: box-shadow 0.2s;
+}
+
+.contact-div {
+  font-weight: lighter;
+  margin: 50px 0px;
 }
 
 .resume-container {
@@ -251,13 +249,12 @@ code {
 }
 
 footer {
-  font-size: xx-large;
   text-align: right;
   position: fixed;
   bottom: 0;
   padding: 5px;
   width: 100%;
-  margin-top: 5px;
+  /* margin-top: 5px; */
   background-image: linear-gradient(rgba(0, 0, 0, 0.747), rgba(0, 0, 0, 0.904)),
     url("https://thumbs.dreamstime.com/b/green-moss-bokeh-background-sunset-light-hd-image-large-resolution-can-be-used-as-wallpaper-web-banners-consepts-188695665.jpg");
 
@@ -267,7 +264,18 @@ footer {
 }
 
 footer a {
-  padding: 10px;
+  padding: 5px;
+}
+
+.logo {
+  width: 2%;
+  filter: grayscale(70%);
+  transition: all 0.2s ease-in-out;
+}
+
+.logo:hover {
+  box-shadow: 0 5px 10px var(--tertiary);
+  filter: grayscale(0%);
 }
 
 @media (max-width: 768px) {
@@ -297,10 +305,12 @@ footer a {
 
   .about {
     flex-direction: column;
+    align-items: stretch;
   }
 
   .about img {
     width: 35%;
+    margin-bottom: 10px;
   }
 
   .skills ul {

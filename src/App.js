@@ -4,12 +4,12 @@ import { Header, Page, Footer } from "./components";
 function App() {
   const [page] = useState([
     {
-      name: "about",
+      name: "About",
     },
-    { name: "portfolio" },
-    { name: "contact" },
+    { name: "Portfolio" },
+    { name: "Contact" },
     {
-      name: "resume",
+      name: "Resume",
     },
   ]);
 
