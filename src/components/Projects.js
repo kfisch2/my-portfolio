@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Button, Modal } from "react-bootstrap";
 
 export default function Projects({ project }) {
-  const { name, description, photo, deploy, github } = project;
+  const { name, description, photo, deploy, github, technologies } = project;
 
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
@@ -37,10 +37,11 @@ export default function Projects({ project }) {
       <div className="project">
         <img src={photo} alt={name} />
         <div className="description-container">
-          <h3 className="project-name">{name}</h3>
+          <h2 className="project-name">{name}</h2>
           <div className="description">
             <div>{description}</div>
           </div>
+          <div className="technologies"> Technologies: {technologies}</div>
           <Button
             className="button"
             href={github}
@@ -50,7 +51,7 @@ export default function Projects({ project }) {
             Github
           </Button>
           <Button
-            className="button"
+            className={`button ${name}`}
             href={deploy}
             target="_blank"
             variant="dark"

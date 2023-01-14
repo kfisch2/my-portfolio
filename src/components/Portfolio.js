@@ -14,6 +14,7 @@ export default function Portfolio() {
       photo: genu,
       deploy: "https://codetrip-33a81.web.app/",
       github: "https://github.com/Hephaestus01/codetrip-project-3",
+      technologies: "React, react-bootstrap, react-router, rc-time-picker, Firebase, Firestore"
     },
     {
       id: 1,
@@ -23,7 +24,9 @@ export default function Portfolio() {
       photo: rIr,
       deploy: "https://bin-ostrowski.github.io/rhythm-in-region/",
       github: "https://github.com/kfisch2/rhythm-in-region",
+      technologies: "HTML, CSS, JS, Materialize, Ticketmaster & Shazam API"
     },
+    // HEROKU CANCELED FREE DYNOS - Move to another hosting site, activate student account on herokue, or replace with new project
     {
       id: 2,
       name: "Dose",
@@ -32,7 +35,9 @@ export default function Portfolio() {
       photo: dose,
       deploy: "https://cryptic-inlet-45736.herokuapp.com/",
       github: "https://github.com/kfisch2/dose",
+      technologies: "HTML, CSS, JS, Bootstrap, Twilio, "
     },
+    
     {
       id: 3,
       name: "NerdHerd",
@@ -41,6 +46,7 @@ export default function Portfolio() {
       photo: nerdherd,
       deploy: "https://nerd-herd06.herokuapp.com/",
       github: "https://github.com/kfisch2/nerd-herd",
+      technologies: "HTML, CSS, JS"
     },
   ];
 
@@ -54,8 +60,11 @@ export default function Portfolio() {
               key={project.name}
             />
           </div>
+          
         );
-      })}
+      })} 
+    
+      <div className="heroku-message">**The last two projects without a deploy button are in progress of deployment. Heroku discontinued free dynos, therefore I am working to get the application running again on another site. You may still checkout out the github repository for it until they are up again.</div>
     </div>
   );
 }

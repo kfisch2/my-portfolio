@@ -6,7 +6,7 @@ export default function About() {
     <div className="about">
       <div>
         {" "}
-        <img src={portrait} alt="Portrait of Kayla"></img>
+        <img className="portrait" src={portrait} alt="Portrait of Kayla"></img>
       </div>
       <div>
         I'm a recent graduate from the University of Oregon Web Development

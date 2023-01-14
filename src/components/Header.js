@@ -1,38 +1,31 @@
-import React, { useEffect } from 'react';
-import { capitalize } from '../utils/helpers';
-import { Container } from 'react-bootstrap'
+import React, { useEffect } from "react";
+import { capitalize } from "../utils/helpers";
 
 function Header(props) {
-  const {
-    page = [],
-    setCurrentPage,
-    currentPage,
-  } = props;
+  const { page = [], setCurrentPage, currentPage } = props;
 
   useEffect(() => {
     document.title = capitalize(currentPage.name);
   }, [currentPage]);
 
-  return (    
-      <Container className="col flex-row header">
-        <nav className="row header-row">
-          <h1 className='my-name'>Kayla Fischer</h1>
-          {page.map((Page) => (
-            <li
-              className={`mx-5 links col ${
-                currentPage.name === Page.name && 'navActive'
-                }`}
-              key={Page.name}
-            >
-              <span
-                onClick={() => setCurrentPage(Page)}
-              >
-                {capitalize(Page.name)}
-              </span>
-            </li>
-          ))}
-        </nav>
-      </Container>
+  return (
+    <div className="header">
+      <div className="my-name">
+        <h1>Kayla Fischer</h1>
+      </div>
+      <nav className="links">
+        {page.map((Page) => (
+          <li
+            className={`link ${currentPage.name === Page.name && "navActive"}`}
+            key={Page.name}
+          >
+            <span onClick={() => setCurrentPage(Page)}>
+              {capitalize(Page.name)}
+            </span>
+          </li>
+        ))}
+      </nav>
+    </div>
   );
 }
 

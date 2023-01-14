@@ -1,28 +1,17 @@
-/* #root {
-  position: relative;
-  min-height: 100vh;
-} */
-
 * {
   --primary: rgb(107, 148, 87);
   --secondary: rgb(255, 255, 255);
-  --tertiary: #343e3d;
+  --tertiary: rgb(52, 62, 61);
 }
 
 body {
   font-weight: lighter;
   text-align: center;
   color: var(--secondary);
-  background-image: url("https://thumbs.dreamstime.com/b/green-moss-bokeh-background-sunset-light-hd-image-large-resolution-can-be-used-as-wallpaper-web-banners-consepts-188695665.jpg");
-  background-image: linear-gradient(
-      rgba(0, 0, 0, 0.877) 50%,
-      rgba(0, 0, 0, 0.651) 10%,
-      rgba(0, 0, 0, 0.877) 50%,
-      rgba(0, 0, 0, 0.7) 100%
-    ),
-    url("https://thumbs.dreamstime.com/b/green-moss-bokeh-background-sunset-light-hd-image-large-resolution-can-be-used-as-wallpaper-web-banners-consepts-188695665.jpg");
+  background-image:linear-gradient(rgba(0, 0, 0, 0.87), rgba(0, 0, 0, 0.945)), url("https://thumbs.dreamstime.com/b/green-moss-bokeh-background-sunset-light-hd-image-large-resolution-can-be-used-as-wallpaper-web-banners-consepts-188695665.jpg") ;
   background-attachment: fixed;
   background-size: cover;
+  background-position: 10% 10%;
 }
 
 h3 {
@@ -30,17 +19,27 @@ h3 {
 }
 
 .my-name {
-  text-align: center;
   font-family: "Estonia", "cursive";
-  font-size: 50px;
   color: var(--secondary);
-  margin-bottom: 50px;
+  padding: 10px;
 }
 
+.header {
+  z-index: 999999;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  top: 0;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.747), rgba(0, 0, 0, 0.904)), url("https://thumbs.dreamstime.com/b/green-moss-bokeh-background-sunset-light-hd-image-large-resolution-can-be-used-as-wallpaper-web-banners-consepts-188695665.jpg") ;
+  width: 100%;
+  background-repeat: no-repeat;  
+  justify-content: space-between;
+  background-position: 10% 0%;
+  align-items: center;
+}
 
 .page-content {
-  padding: 100px;
-  background: linear-gradient(rgba(255,255,255,0), rgba(107, 148, 87, 0.8), rgba(107, 148, 87, 0.8), rgba(255, 255, 255, 0));
+  padding-top: calc(10%);
 }
 
 .contact-div {
@@ -48,24 +47,24 @@ h3 {
   margin: 50px 0px;
 }
 
-nav {
-  font-size: large;
-  padding-bottom: 20px;
-}
 
-.header-row {
-  justify-content: center;
-  flex-direction: row;
-}
+
 
 .links {
   color: var(--secondary);
   transition: all 0.2s ease-in-out;
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
 }
 
-.links:hover {
+.link {
+  padding: 20px;
+}
+
+.link:hover {
   font-style: italic;
-  box-shadow: 0 5px 10px var(--tertiary);
+  box-shadow: 0px 1px 0px 0px var(--tertiary);
   cursor: pointer;
 }
 
@@ -73,6 +72,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 10px
 }
 
 .about img {
@@ -85,6 +85,12 @@ nav {
 
 .about div {
   font-size: large;
+}
+
+/*WAITING ON HEROKU CREDITS*/
+.NerdHerd,
+.Dose {
+  display: none;
 }
 
 .projects-container {
@@ -101,7 +107,11 @@ nav {
   margin: 10px;
   justify-content: center;
   align-items: center;
-  border-bottom: #343e3d solid 1px;
+  border-bottom: #2f5825 solid 1px;
+}
+
+.project-name {
+  font-weight: bold;
 }
 
 .description {
@@ -120,6 +130,10 @@ nav {
   margin: 10px;
 }
 
+.technologies {
+  font-size: large;
+  color: var(--secondary);
+}
 
 .logo {
   width: 3%;
@@ -226,7 +240,8 @@ a {
 }
 
 a:hover {
-  color: var(--primary);
+  color: var(--tertiary);
+  font-style: italic;
 }
 
 code {
@@ -235,47 +250,75 @@ code {
 }
 
 footer {
+  font-size: xx-large;
   text-align: right;
   position: fixed;
-  bottom: 5px;
+  bottom: 0;
   width: 100%;
   margin-top: 5px;
+  background-color: black;
 }
 
 footer a {
   padding: 10px;
 }
 
-/* @media (max-width: 768px) {
-  .carousel-item img {
-    max-width: 30vw;
-    max-height: 45vh;
+@media (max-width: 768px) {
+  nav {
+    font-size: large;
+  }
+
+  .page-content {
+    /* padding: 100px; */
+  }
+
+  .project {
+    flex-direction: column-reverse;
+  }
+
+  .project img {
+    width: 100%;
+  }
+
+  .description {
+    font-size: medium;
   }
 
   .row {
     flex-direction: column;
   }
 
-  nav {
-    font-size: large;
-  }
-
   .about {
     flex-direction: column;
   }
+
   .about img {
     width: 35%;
   }
 
-  .about div {
-
+  .skills ul {
+    display: flex;
+    flex-direction:column;
   }
-
   footer {
     font-size: large;
   }
+}
 
-  .logo {
-    width: 3%;
+@media (max-width: 481px) {
+
+  .portrait {
+    display: none;
   }
-} */
+
+  .header {
+    flex-direction: column;
+  }
+
+  .links {
+    flex-direction: column;
+  }
+  .about-div {
+    font-size: xx-large;
+  }
+}
