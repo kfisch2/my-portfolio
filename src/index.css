@@ -1,14 +1,15 @@
 * {
   --primary: rgb(107, 148, 87);
   --secondary: rgb(255, 255, 255);
-  --tertiary: rgb(52, 62, 61);
+  --tertiary: rgb(112, 122, 122);
 }
 
 body {
   font-weight: lighter;
   text-align: center;
   color: var(--secondary);
-  background-image:linear-gradient(rgba(0, 0, 0, 0.87), rgba(0, 0, 0, 0.945)), url("https://thumbs.dreamstime.com/b/green-moss-bokeh-background-sunset-light-hd-image-large-resolution-can-be-used-as-wallpaper-web-banners-consepts-188695665.jpg") ;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.87), rgba(0, 0, 0, 0.945)),
+    url("https://thumbs.dreamstime.com/b/green-moss-bokeh-background-sunset-light-hd-image-large-resolution-can-be-used-as-wallpaper-web-banners-consepts-188695665.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-position: 10% 10%;
@@ -25,30 +26,29 @@ h3 {
 }
 
 .header {
-  z-index: 999999;
+  /* z-index: 999999; */
   display: flex;
   flex-direction: row;
   position: fixed;
   top: 0;
-  background-image:linear-gradient(rgba(0, 0, 0, 0.747), rgba(0, 0, 0, 0.904)), url("https://thumbs.dreamstime.com/b/green-moss-bokeh-background-sunset-light-hd-image-large-resolution-can-be-used-as-wallpaper-web-banners-consepts-188695665.jpg") ;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.747), rgba(0, 0, 0, 0.904)),
+    url("https://thumbs.dreamstime.com/b/green-moss-bokeh-background-sunset-light-hd-image-large-resolution-can-be-used-as-wallpaper-web-banners-consepts-188695665.jpg");
   width: 100%;
-  background-repeat: no-repeat;  
+  background-repeat: no-repeat;
   justify-content: space-between;
-  background-position: 10% 0%;
+  /* background-position: 10% 0%; */
   align-items: center;
 }
 
 .page-content {
-  padding-top: calc(10%);
+  /* padding-top: calc(12%); */
+  padding: calc(12%);
 }
 
 .contact-div {
   font-weight: lighter;
   margin: 50px 0px;
 }
-
-
-
 
 .links {
   color: var(--secondary);
@@ -72,7 +72,6 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px
 }
 
 .about img {
@@ -193,7 +192,6 @@ input {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 10px;
   grid-row-gap: 10px;
 }
 
@@ -269,7 +267,7 @@ footer a {
   }
 
   .page-content {
-    /* padding: 100px; */
+    padding: 100px;
   }
 
   .project {
@@ -298,7 +296,7 @@ footer a {
 
   .skills ul {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
   }
   footer {
     font-size: large;
@@ -306,10 +304,15 @@ footer a {
 }
 
 @media (max-width: 481px) {
-
-  .portrait {
-    display: none;
+  .page-content {
+    padding: 0;
+    padding-top: 220px;
+    padding-bottom: 30px;
   }
+
+  /* .portrait {
+    display: none;
+  } */
 
   .header {
     flex-direction: column;
@@ -317,8 +320,17 @@ footer a {
 
   .links {
     flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .link {
+    padding: 2px;
   }
   .about-div {
     font-size: xx-large;
+  }
+
+  .project img {
+    width: 90%;
   }
 }

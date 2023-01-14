@@ -11,7 +11,7 @@ export default function Resume() {
       </h3>
       <div className="skills-container">
         <div className="skills">
-          <h3>Front-end skills</h3>
+          <h3>Front-end</h3>
           <ul>
             <li>HTML</li>
             <li>CSS</li>
@@ -26,7 +26,7 @@ export default function Resume() {
         </div>
         <div className="ul-separator"></div>
         <div className="skills">
-          <h3>Back-end skills</h3>
+          <h3>Back-end</h3>
           <ul>
             <li>APIs</li>
             <li>Node</li>
