@@ -17,7 +17,7 @@ export default function Portfolio() {
       github: "https://github.com/Hephaestus01/codetrip-project-3",
       technologies:
         "React, react-bootstrap, react-router, rc-time-picker, Firebase, Firestore",
-      role: "I did stuff!",
+      role: "Read documentation for Firebase/Firestore to configure it with our project, collaborate with member who managed authentication, data structure, and assist front-end team with remaining tickets.",
     },
     {
       id: 1,
@@ -27,9 +27,8 @@ export default function Portfolio() {
       photo: findABook,
       deploy: "https://mighty-oasis-75035.herokuapp.com/",
       github: "https://github.com/kfisch2/find-a-book",
-      technologies:
-        "React, bootstrap, refactored RESTful API to apollo/GraphQL",
-      role: "I did stuff!",
+      technologies: "React, bootstrap",
+      role: "Refactor RESTful API into functional GraphQL API",
     },
     {
       id: 2,
@@ -40,7 +39,7 @@ export default function Portfolio() {
       deploy: "https://bin-ostrowski.github.io/rhythm-in-region/",
       github: "https://github.com/kfisch2/rhythm-in-region",
       technologies: "HTML, CSS, JS, Materialize, Ticketmaster & Shazam API",
-      role: "I did stuff!",
+      role: "Read documentation to learn how to use Materialize, write API calls for Ticketmaster and Shazam, set up the backend, and work with the front-end team to submit the project on time.",
     },
     {
       id: 3,
@@ -51,7 +50,7 @@ export default function Portfolio() {
       deploy: "https://nerd-herd06.herokuapp.com/",
       github: "https://github.com/kfisch2/nerd-herd",
       technologies: "HTML, CSS, JS, handlebars, sequelize, express, bcrypt",
-      role: "I did stuff!",
+      role: "Built from scratch by yours truly",
     },
   ];
 

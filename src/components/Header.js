@@ -9,7 +9,7 @@ function Header(props) {
   }, [currentPage]);
 
   return (
-    <div className="header">
+    <header>
       <div className="my-name">
         <h1>Kayla Fischer</h1>
       </div>
@@ -25,7 +25,7 @@ function Header(props) {
           </li>
         ))}
       </nav>
-    </div>
+    </header>
   );
 }
 

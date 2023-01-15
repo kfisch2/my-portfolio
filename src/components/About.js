@@ -8,7 +8,7 @@ export default function About() {
         {" "}
         <img className="portrait" src={portrait} alt="Portrait of Kayla"></img>
       </div>
-      <div>
+      <div className="about-div">
         Software developer who recently graduated from a coding bootcamp with a
         degree in mathematics and 10 years of experience in teaching. Working in
         the preschool setting taught me many valuable lessons that I hold dearly

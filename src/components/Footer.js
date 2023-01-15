@@ -17,18 +17,24 @@ export default function Footer(props) {
   ];
   return (
     <footer>
-      {urls.map((url) => (
-        <a
-          key={url.name}
-          href={url.link}
-          target="_blank"
-          rel="noreferrer"
-          style={{ textDecoration: "none" }}
-          className="social"
-        >
-          <img className="logo" src={url.logo}></img>
-        </a>
-      ))}
+      {" "}
+      <div className="footer-name">
+        <h1>Kayla Fischer</h1>
+      </div>
+      <div className="icons">
+        {urls.map((url) => (
+          <a
+            key={url.name}
+            href={url.link}
+            target="_blank"
+            rel="noreferrer"
+            style={{ textDecoration: "none" }}
+            className="social"
+          >
+            <img className="logo" src={url.logo}></img>
+          </a>
+        ))}
+      </div>
     </footer>
   );
 }
