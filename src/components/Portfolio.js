@@ -16,7 +16,7 @@ export default function Portfolio() {
       deploy: "https://codetrip-33a81.web.app/",
       github: "https://github.com/Hephaestus01/codetrip-project-3",
       technologies:
-        "React, react-bootstrap, react-router, rc-time-picker, Firebase, Firestore",
+        "React, React-bootstrap, React-router, Firebase, Firestore",
       role: "Read documentation for Firebase/Firestore to configure it with our project, collaborate with member who managed authentication, data structure, and assist front-end team with remaining tickets.",
     },
     {
@@ -27,7 +27,7 @@ export default function Portfolio() {
       photo: findABook,
       deploy: "https://mighty-oasis-75035.herokuapp.com/",
       github: "https://github.com/kfisch2/find-a-book",
-      technologies: "React, bootstrap",
+      technologies: "React, Bootstrap",
       role: "Refactor RESTful API into functional GraphQL API",
     },
     {
@@ -49,7 +49,7 @@ export default function Portfolio() {
       photo: nerdherd,
       deploy: "https://nerd-herd06.herokuapp.com/",
       github: "https://github.com/kfisch2/nerd-herd",
-      technologies: "HTML, CSS, JS, handlebars, sequelize, express, bcrypt",
+      technologies: "HTML, CSS, JS, Handlebars, Sequelize, Express",
       role: "Built from scratch by yours truly",
     },
   ];

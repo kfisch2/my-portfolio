@@ -145,7 +145,7 @@ header {
 
 .modal-header,
 .modal-body {
-  color: var(--primary);
+  color: black;
   font-weight: normal;
 }
 /* END OF PORTFOLIO */
