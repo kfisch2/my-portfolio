@@ -20,13 +20,7 @@ h3 {
   font-weight: lighter;
 }
 
-.my-name {
-  font-family: "Estonia", "cursive";
-  color: var(--secondary);
-  padding: 10px;
-
-}
-
+/* HEADER */
 header {
   font-size: x-large;
   display: flex;
@@ -43,12 +37,14 @@ header {
   background-size: cover;
 }
 
-.page-content {
-  margin-top: 20px;
-  padding: calc(13%);
+.header-name {
+  font-family: "Estonia", "cursive";
+  color: var(--secondary);
+  padding: 10px;
 }
+/* END OF HEADER*/
 
-/* To add later*/ 
+/* To add later*/
 /* .page-title {
   width: 100%;
   padding: 10px;
@@ -58,7 +54,12 @@ header {
   background-attachment: fixed;
   background-size: cover;
 } */
+.page-content {
+  margin-top: 20px;
+  padding: calc(13%);
+}
 
+/* NAV LINKS */
 .links {
   color: var(--secondary);
   transition: all 0.2s ease-in-out;
@@ -76,7 +77,9 @@ header {
   box-shadow: 0px 1px 0px 0px var(--tertiary);
   cursor: pointer;
 }
+/* END OF NAV LINKS */
 
+/* ABOUT */
 .about {
   display: flex;
   justify-content: center;
@@ -94,7 +97,9 @@ header {
 .about-div {
   font-size: x-large;
 }
+/* END OF ABOUT */
 
+/* PORTFOLIO */
 .projects-container {
   display: flex;
   flex-direction: column;
@@ -127,44 +132,42 @@ header {
   width: 40%;
   margin: 50px;
 }
-
 .button {
   margin: 10px;
 }
-
 .technologies {
   font-size: large;
   color: var(--secondary);
 }
-
-textarea {
-  width: 15%;
+.modal {
+  backdrop-filter: blur(10px);
 }
 
-#submitBtn {
-  color: var(--secondary);
-  background-color: var(--primary);
+.modal-header,
+.modal-body {
+  color: var(--primary);
   font-weight: normal;
-  text-transform: uppercase;
-  transition: all 0.2s ease-in-out;
 }
+/* END OF PORTFOLIO */
 
-#submitBtn:hover {
-  color: var(--secondary);
-  background-color: var(--primary);
-  box-shadow: 0 5px 10px var(--tertiary);
-}
-
-input {
-  border-radius: 3px;
-  transition: box-shadow 0.2s;
-}
-
+/* CONTACT */
 .contact-section {
   font-weight: lighter;
   margin: 50px 0px;
 }
 
+a {
+  text-decoration: none;
+  color: var(--secondary);
+}
+
+a:hover {
+  color: var(--tertiary);
+  font-style: italic;
+}
+/* END OF CONTACT */
+
+/* RESUME */
 .resume-container {
   display: flex;
   flex-direction: column;
@@ -219,31 +222,9 @@ li {
   transition: all 0.2s ease-in-out;
 }
 
-.modal {
-  backdrop-filter: blur(10px);
-}
+/* END OF RESUME */
 
-.modal-header,
-.modal-body {
-  color: var(--primary);
-  font-weight: normal;
-}
-
-a {
-  text-decoration: none;
-  color: var(--secondary);
-}
-
-a:hover {
-  color: var(--tertiary);
-  font-style: italic;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
+/* FOOTER */
 footer {
   text-align: right;
   position: fixed;
@@ -277,7 +258,9 @@ footer a {
   box-shadow: 0 5px 10px var(--tertiary);
   filter: grayscale(0%);
 }
+/* END OF FOOTER */
 
+/* MEDIA QUERIES */
 @media (max-width: 768px) {
   nav {
     font-size: large;
@@ -285,7 +268,6 @@ footer a {
 
   .page-content {
     padding: 100px;
-
   }
 
   .project {
@@ -331,11 +313,6 @@ footer a {
   .my-name {
     display: none;
   }
-
-  /* .portrait {
-    display: none;
-  } */
-
   header {
     align-items: center;
     justify-content: space-around;
