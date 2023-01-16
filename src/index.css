@@ -1,7 +1,7 @@
 * {
   --primary: rgb(107, 148, 87);
   --secondary: rgb(255, 255, 255);
-  --tertiary: rgb(112, 122, 122);
+  --tertiary: rgb(79, 87, 87);
 }
 
 body {
@@ -44,7 +44,7 @@ header {
 }
 /* END OF HEADER*/
 
-/* To add later*/
+/* BODY WRAPPER */
 /* .page-title {
   width: 100%;
   padding: 10px;
@@ -55,9 +55,14 @@ header {
   background-size: cover;
 } */
 .page-content {
-  margin-top: 20px;
-  padding: calc(13%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+  padding: calc(12%);
+  min-height: 100vh;
 }
+/* END OF BODY WRAPPER*/
 
 /* NAV LINKS */
 .links {
@@ -86,16 +91,20 @@ header {
   align-items: center;
 }
 
-.about img {
-  width: 50%;
+.portrait {
+  width: 40%;
   transform: scaleX(-1);
-  border-radius: 5px;
-  background: var(--tertiary);
-  padding: 10px;
+}
+
+.portrait img {
+  width: 60%;
+  padding: 8px;
+  background-color: var(--tertiary);
 }
 
 .about-div {
   font-size: x-large;
+  width: 60%;
 }
 /* END OF ABOUT */
 
@@ -111,7 +120,6 @@ header {
 .project {
   display: flex;
   flex-direction: row;
-  margin: 10px;
   justify-content: center;
   align-items: center;
   border-bottom: #2f5825 solid 1px;
@@ -266,8 +274,18 @@ footer a {
     font-size: large;
   }
 
+  .about {
+    flex-direction: column;
+  }
+
+  .about img {
+    width: 35%;
+    margin-bottom: 10px;
+  }
+
   .page-content {
-    padding: 100px;
+    padding-right: 0px;
+    padding-left: 0px;
   }
 
   .project {
@@ -286,16 +304,6 @@ footer a {
     flex-direction: column;
   }
 
-  .about {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .about img {
-    width: 35%;
-    margin-bottom: 10px;
-  }
-
   .skills ul {
     display: flex;
     flex-direction: column;
@@ -304,10 +312,6 @@ footer a {
 
 @media (max-width: 481px) {
   .page-content {
-    padding: 50px;
-    padding-top: 100px;
-    padding-bottom: 40px;
-    margin-top: 0px;
   }
 
   .header-name {
@@ -321,6 +325,12 @@ footer a {
   .about {
     flex-direction: column-reverse;
   }
+  .about-div {
+    font-size: large;
+  }
+  .portrait {
+    width: 100%;
+  }
 
   .links {
     flex-direction: row;
@@ -329,9 +339,6 @@ footer a {
 
   .link {
     padding: 2px;
-  }
-  .about-div {
-    font-size: large;
   }
 
   .project img {
