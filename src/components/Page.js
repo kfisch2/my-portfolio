@@ -8,33 +8,13 @@ export default function Page({ currentPage }) {
   const renderPage = () => {
     switch (currentPage.name) {
       case "About":
-        return (
-          <>
-            {/* <h2 className="page-title">{currentPage.name}</h2> */}
-            <About />
-          </>
-        );
+        return <About />;
       case "Portfolio":
-        return (
-          <>
-            {/* <h2 className="page-title">{currentPage.name}</h2> */}
-            <Portfolio />
-          </>
-        );
+        return <Portfolio />;
       case "Contact":
-        return (
-          <>
-            {/* <h2 className="page-title">{currentPage.name}</h2> */}
-            <Contact />
-          </>
-        );
+        return <Contact />;
       case "Resume":
-        return (
-          <>
-            {/* <h2 className="page-title">{currentPage.name}</h2> */}
-            <Resume />
-          </>
-        );
+        return <Resume />;
       default:
         return <About />;
     }

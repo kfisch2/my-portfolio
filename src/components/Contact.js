@@ -7,51 +7,29 @@ const Contact = () => {
   const form = useRef();
   const sendEmail = (e) => {
     const email = document.getElementById("email").value;
-    const userName = document.getElementById("from_name_input").value;
+    const userName = document.getElementById("from_name").value;
     const message = document.getElementById("message").value;
     e.preventDefault();
 
-    emailjs.send("service_ihr3ehe", "template_mfvttv9", {
-      userName,
-      message,
-      email,
-    }, "iA7DYUW1FQPnTZgkM");
+    emailjs.send(
+      "service_ihr3ehe",
+      "template_mfvttv9",
+      {
+        userName,
+        message,
+        email,
+      },
+      "iA7DYUW1FQPnTZgkM"
+    );
   };
 
   return (
     <section className="contact-section">
       {" "}
-      {/* contact form */}
-      <div className="contact-form">
-        <form id="form" ref={form} onSubmit={sendEmail}>
-          <label form="from_name">Your name: </label>
-          <input
-            type="text"
-            id="from_name_input"
-            name="from_name"
-            placeholder="Your name..."
-          ></input>
-
-          <label form="email">Your email: </label>
-          <input type="text" id="email" placeholder="Your email..."></input>
-
-          <label form="message">Message: </label>
-          <textarea
-            type="text"
-            id="message"
-            name="message"
-            placeholder="Your message..."
-          ></textarea>
-
-          <button type="submit" value="Send" onClick={sendEmail}>
-            Send
-          </button>
-        </form>
-      </div>
-      <div>
+      <div className="contact-info">
         {" "}
-        <h3 className="contact">
-          Email me at{" "}
+        <h3>
+          Email me:{" "}
           <a href="mailto:kmlindsey24@gmail.com">kmlindsey24@gmail.com</a>
         </h3>
         <h3>
@@ -63,6 +41,25 @@ const Contact = () => {
             LinkedIn
           </a>
         </h3>
+        <h3>
+          Fill out this form and I will get back to you as soon as possible!
+        </h3>
+      </div>
+      {/* contact form */}{" "}
+      <div className="form-wrapper">
+        <form class="form">
+          <h3 className="contact-me">Contact me</h3>
+          <p type="Name:">
+            <input id="from_name" placeholder="Your name"></input>
+          </p>
+          <p type="Email:">
+            <input id="email" placeholder="Your email"></input>
+          </p>
+          <p type="Message:">
+            <input id="message" placeholder="Message"></input>
+          </p>
+          <button>Send Message</button>
+        </form>
       </div>
     </section>
   );
