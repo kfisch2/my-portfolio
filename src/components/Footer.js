@@ -24,9 +24,6 @@ export default function Footer(props) {
   return (
     <footer>
       {" "}
-      <div className="footer-name">
-        <h1>Kayla Fischer</h1>
-      </div>
       <div className="icons">
         {urls.map((url) => (
           <a
