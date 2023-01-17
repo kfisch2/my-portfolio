@@ -28,7 +28,7 @@ export default function Portfolio() {
       deploy: "https://mighty-oasis-75035.herokuapp.com/",
       github: "https://github.com/kfisch2/find-a-book",
       technologies: "React, Bootstrap",
-      role: "Refactor RESTful API into functional GraphQL API",
+      role: "Refactor RESTful API into functional GraphQL API.",
     },
     {
       id: 2,
@@ -39,7 +39,7 @@ export default function Portfolio() {
       deploy: "https://bin-ostrowski.github.io/rhythm-in-region/",
       github: "https://github.com/kfisch2/rhythm-in-region",
       technologies: "HTML, CSS, JS, Materialize, Ticketmaster & Shazam API",
-      role: "Read documentation to learn how to use Materialize, write API calls for Ticketmaster and Shazam, set up the backend, and work with the front-end team to submit the project on time.",
+      role: "Read documentation for and implement Materialize, write API calls for Ticketmaster and Shazam, set up the back-end, and work with the front-end team to submit the project on time.",
     },
     {
       id: 3,
@@ -50,7 +50,7 @@ export default function Portfolio() {
       deploy: "https://nerd-herd06.herokuapp.com/",
       github: "https://github.com/kfisch2/nerd-herd",
       technologies: "HTML, CSS, JS, Handlebars, Sequelize, Express",
-      role: "Built from scratch by yours truly",
+      role: "Built from scratch by yours truly!",
     },
   ];
 

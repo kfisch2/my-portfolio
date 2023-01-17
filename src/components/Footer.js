@@ -41,6 +41,7 @@ export default function Footer(props) {
           </a>
         ))}
       </div>
+      <div>© 2023 Kayla Fischer </div>
     </footer>
   );
 }

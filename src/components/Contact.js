@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { Button } from "react-bootstrap";
 import emailjs from "@emailjs/browser";
 
 // controlled component: when the form data is maintained by the state of the component
@@ -31,7 +32,7 @@ const Contact = () => {
   return (
     <section className="contact-section form-wrapper">
       {/* contact form */}{" "}
-      <form class="form">
+      <form className="form">
         <h3 className="contact-me">Contact me</h3>
         <p type="Name:">
           <input id="from_name" placeholder="Your name"></input>

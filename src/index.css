@@ -14,6 +14,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  min-height: 100vh;
 }
 
 h3 {
@@ -41,7 +42,7 @@ header {
   font-family: "Estonia", "cursive";
   color: var(--secondary);
   padding: 10px;
-  font-size: 4.5rem;
+  font-size: 3.5rem;
 }
 /* END OF HEADER*/
 
@@ -58,9 +59,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 0px;
-  padding: calc(9%);
-  /* min-height: 100vh; */
+  padding: calc(13%);
 }
 
 /* NAV LINKS */
@@ -142,6 +141,7 @@ header {
 .button {
   margin: 10px;
 }
+
 .technologies {
   font-size: large;
   color: var(--secondary);
@@ -189,11 +189,10 @@ input:focus {
 }
 .contact-me {
   text-align: left;
-
   color: var(--secondary);
 }
 
-button {
+.form button {
   padding: 8px 12px;
   margin: 8px 0 0;
   border: 2px solid var(--secondary);
@@ -202,8 +201,8 @@ button {
   transition: all 0.3s;
 }
 
-button:hover {
-  background: var(--tertiary);
+.form button:hover {
+  background: var(--primary);
   color: var(--secondary);
 }
 /* END OF CONTACT */
@@ -234,6 +233,9 @@ button:hover {
   flex-direction: row;
 }
 
+.front-end {
+  margin-right: 30px;
+}
 .ul-separator {
   border: #343e3d 1px solid;
 }
@@ -342,7 +344,7 @@ footer a {
   }
 
   .project img {
-    width: 100%;
+    width: 90%;
   }
 
   .description {

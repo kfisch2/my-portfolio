@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { Button, Modal } from "react-bootstrap";
 
 export default function Projects({ project }) {
-  const { name, description, photo, deploy, github, technologies, role } = project;
+  const { name, description, photo, deploy, github, technologies, role } =
+    project;
 
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
@@ -11,12 +12,7 @@ export default function Projects({ project }) {
   return (
     <>
       {/* React Modal when user clicks on my role button */}
-      <Modal
-        className="modal"
-        show={show}
-        onHide={handleClose}
-        centered
-      >
+      <Modal className="modal" show={show} onHide={handleClose} centered>
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">{name}</Modal.Title>
         </Modal.Header>
@@ -58,7 +54,11 @@ export default function Projects({ project }) {
           >
             Deployed
           </Button>
-          <Button className={`button ${name}`} variant="dark" onClick={handleShow}>
+          <Button
+            className={`button ${name}`}
+            variant="dark"
+            onClick={handleShow}
+          >
             My Role
           </Button>
         </div>
