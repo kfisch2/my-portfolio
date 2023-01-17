@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.5fb9b662.css",
-    "main.js": "/my-portfolio/static/js/main.752f0c2c.js",
+    "main.css": "/my-portfolio/static/css/main.54990f0b.css",
+    "main.js": "/my-portfolio/static/js/main.834d8a8a.js",
     "static/media/rIr.png": "/my-portfolio/static/media/rIr.d432516e43f9049392d0.png",
     "static/media/genu.png": "/my-portfolio/static/media/genu.70791981b9da3a01a9b9.png",
     "static/media/portrait2.jpg": "/my-portfolio/static/media/portrait2.4ef75908cea1b3221e7b.jpg",
@@ -10,11 +10,11 @@
     "static/media/mail.png": "/my-portfolio/static/media/mail.8fa6c801aebe4ce7d97b.png",
     "static/media/KaylaFischerResume.pdf": "/my-portfolio/static/media/KaylaFischerResume.05919c84bd82cb04b33c.pdf",
     "index.html": "/my-portfolio/index.html",
-    "main.5fb9b662.css.map": "/my-portfolio/static/css/main.5fb9b662.css.map",
-    "main.752f0c2c.js.map": "/my-portfolio/static/js/main.752f0c2c.js.map"
+    "main.54990f0b.css.map": "/my-portfolio/static/css/main.54990f0b.css.map",
+    "main.834d8a8a.js.map": "/my-portfolio/static/js/main.834d8a8a.js.map"
   },
   "entrypoints": [
-    "static/css/main.5fb9b662.css",
-    "static/js/main.752f0c2c.js"
+    "static/css/main.54990f0b.css",
+    "static/js/main.834d8a8a.js"
   ]
 }
