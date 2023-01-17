@@ -11,6 +11,11 @@ const Contact = () => {
     const message = document.getElementById("message").value;
     e.preventDefault();
 
+    // field validation
+    if (!email || !userName || !message) {
+      alert("please enter all fields");
+      return;
+    }
     emailjs.send(
       "service_ihr3ehe",
       "template_mfvttv9",
@@ -24,43 +29,21 @@ const Contact = () => {
   };
 
   return (
-    <section className="contact-section">
-      {" "}
-      <div className="contact-info">
-        {" "}
-        <h3>
-          Email me:{" "}
-          <a href="mailto:kmlindsey24@gmail.com">kmlindsey24@gmail.com</a>
-        </h3>
-        <h3>
-          Connect with me on{" "}
-          <a
-            href="https://www.linkedin.com/in/kayla-fischer-679200109/"
-            target={"_blank"}
-          >
-            LinkedIn
-          </a>
-        </h3>
-        <h3>
-          Fill out this form and I will get back to you as soon as possible!
-        </h3>
-      </div>
+    <section className="contact-section form-wrapper">
       {/* contact form */}{" "}
-      <div className="form-wrapper">
-        <form class="form">
-          <h3 className="contact-me">Contact me</h3>
-          <p type="Name:">
-            <input id="from_name" placeholder="Your name"></input>
-          </p>
-          <p type="Email:">
-            <input id="email" placeholder="Your email"></input>
-          </p>
-          <p type="Message:">
-            <input id="message" placeholder="Message"></input>
-          </p>
-          <button>Send Message</button>
-        </form>
-      </div>
+      <form class="form">
+        <h3 className="contact-me">Contact me</h3>
+        <p type="Name:">
+          <input id="from_name" placeholder="Your name"></input>
+        </p>
+        <p type="Email:">
+          <input id="email" placeholder="Your email"></input>
+        </p>
+        <p type="Message:">
+          <textarea id="message" placeholder="Message" cols={50}></textarea>
+        </p>
+        <button onClick={sendEmail}>Send Message</button>
+      </form>
     </section>
   );
 };

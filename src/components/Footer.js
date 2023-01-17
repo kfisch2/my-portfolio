@@ -1,6 +1,7 @@
 import React from "react";
-import linkedIn from "../images/linkedin.png";
-import github from "../images/github.png";
+import linkedIn from "../images/In-White-26.png";
+import github from "../images/github-mark-white.png";
+import email from "../images/mail.png";
 
 export default function Footer(props) {
   const urls = [
@@ -13,6 +14,11 @@ export default function Footer(props) {
       name: "Github",
       link: "https://www.github.com/kfisch2",
       logo: github,
+    },
+    {
+      name: "email",
+      link: "mailto:kmlindsey24@gmail.com",
+      logo: email,
     },
   ];
   return (

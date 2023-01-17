@@ -11,7 +11,7 @@ function Header(props) {
   return (
     <header>
       <div className="header-name">
-        <h1>Kayla Fischer</h1>
+        <h1 className="my-name">Kayla Fischer</h1>
       </div>
       <nav className="links">
         {page.map((Page) => (
