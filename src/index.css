@@ -207,6 +207,7 @@ input:focus {
   background: var(--tertiary);
   color: var(--secondary);
 }
+
 /* END OF CONTACT */
 
 /* RESUME */
@@ -288,7 +289,7 @@ li {
 
 /* FOOTER */
 footer {
-  text-align: right;
+  text-align: left;
   position: fixed;
   bottom: 0;
   padding: 5px;
@@ -298,6 +299,14 @@ footer {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+}
+
+.copyright{
+  display: inline;
+}
+
+.icons {
+  display: inline;
 }
 
 footer a {
@@ -319,10 +328,9 @@ footer a {
 
 /* MEDIA QUERIES */
 @media (max-width: 768px) {
-
   .page-content {
     padding: 10px;
-    padding-top: calc(25%)
+    padding-top: calc(25%);
   }
 
   nav {
@@ -366,7 +374,6 @@ footer a {
 }
 
 @media (max-width: 481px) {
-
   /* .page-content {
     padding: 10px;
     padding-top: calc(13%);
@@ -405,7 +412,6 @@ footer a {
   }
 
   footer {
-
     display: flex;
     flex-direction: row;
     align-items: center;

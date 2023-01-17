@@ -38,7 +38,7 @@ export default function Footer(props) {
           </a>
         ))}
       </div>
-      <div>© 2023 Kayla Fischer </div>
+      <div className="copyright">© 2023 Kayla Fischer </div>
     </footer>
   );
 }
