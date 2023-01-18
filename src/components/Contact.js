@@ -21,16 +21,16 @@ const Contact = () => {
     if (validateEmail(email) && userName && message) {
       handleShow();
       e.preventDefault();
-      // emailjs.send(
-      //   "service_ihr3ehe",
-      //   "template_mfvttv9",
-      //   {
-      //     userName,
-      //     message,
-      //     email,
-      //   },
-      //   "iA7DYUW1FQPnTZgkM"
-      // );
+      emailjs.send(
+        "service_ihr3ehe",
+        "template_mfvttv9",
+        {
+          userName,
+          message,
+          email,
+        },
+        "iA7DYUW1FQPnTZgkM"
+      );
     } else {
       e.preventDefault();
       alert("Please check that are fields are filled in and email is valid");
@@ -51,6 +51,7 @@ const Contact = () => {
         {/* contact form */}{" "}
         <form className="form">
           <h3 className="contact-me">Contact me</h3>
+
           <p type="Name:">
             <input id="from_name" placeholder="Your name"></input>
           </p>
@@ -60,6 +61,7 @@ const Contact = () => {
           <p type="Message:">
             <textarea id="message" placeholder="Message" cols={50}></textarea>
           </p>
+          <p>All fields are required</p>
           <button onClick={sendEmail}>Send Message</button>
         </form>
       </section>
