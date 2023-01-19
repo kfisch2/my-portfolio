@@ -21,16 +21,16 @@ const Contact = () => {
     if (validateEmail(email) && userName && message) {
       handleShow();
       e.preventDefault();
-      // emailjs.send(
-      //   "service_ihr3ehe",
-      //   "template_mfvttv9",
-      //   {
-      //     from_name: userName,
-      //     message: message,
-      //     reply_to: email,
-      //   },
-      //   "iA7DYUW1FQPnTZgkM"
-      // );
+        emailjs.send(
+        "service_ihr3ehe",
+        "template_mfvttv9",
+         {
+           from_name: userName,
+           message: message,
+           reply_to: email,
+         },
+         "iA7DYUW1FQPnTZgkM"
+       );
     } else {
       e.preventDefault();
       alert("Please check that are fields are filled in and email is valid");
