@@ -20,14 +20,14 @@ const Contact = () => {
 
     if (validateEmail(email) && userName && message) {
       handleShow();
-      e.preventDefault();
+
       emailjs.send(
         "service_ihr3ehe",
         "template_mfvttv9",
         {
-          userName,
-          message,
-          email,
+          from_name: userName,
+          message: message,
+          reply_to: email,
         },
         "iA7DYUW1FQPnTZgkM"
       );
@@ -65,7 +65,6 @@ const Contact = () => {
           <button onClick={sendEmail}>Send Message</button>
         </form>
       </section>
-      ;
     </>
   );
 };

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Button, Modal } from "react-bootstrap";
 
-export default function Projects({ project }) {
+const Project = ({ project }) => {
   const { name, description, photo, deploy, github, technologies, role } =
     project;
 
@@ -66,3 +66,5 @@ export default function Projects({ project }) {
     </>
   );
 }
+
+export default Project;

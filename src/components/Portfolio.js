@@ -1,4 +1,4 @@
-import Projects from "./Projects";
+import Project from "./Project";
 import rIr from "../images/rIr.png";
 import genu from "../images/genu.png";
 import nerdherd from "../images/nerdherd.png";
@@ -59,7 +59,7 @@ export default function Portfolio() {
       {projects.map((project, i) => {
         return (
           <div>
-            <Projects project={project} key={project.name} />
+            <Project project={project} key={project.name} />
           </div>
         );
       })}
