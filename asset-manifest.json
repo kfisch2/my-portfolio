@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.54990f0b.css",
-    "main.js": "/my-portfolio/static/js/main.880e2d7f.js",
-    "static/media/rIr.png": "/my-portfolio/static/media/rIr.d432516e43f9049392d0.png",
-    "static/media/genu.png": "/my-portfolio/static/media/genu.70791981b9da3a01a9b9.png",
-    "static/media/portrait2.jpg": "/my-portfolio/static/media/portrait2.4ef75908cea1b3221e7b.jpg",
-    "static/media/nerdherd.png": "/my-portfolio/static/media/nerdherd.1f04970a47d7038a8b18.png",
-    "static/media/findABook.png": "/my-portfolio/static/media/findABook.960517b820b227888a0c.png",
+    "main.css": "/my-portfolio/static/css/main.c3afc06f.css",
+    "main.js": "/my-portfolio/static/js/main.918f7e1b.js",
+    "static/media/rIr.png": "/my-portfolio/static/media/rIr.9222b4cd12eba886113b.png",
+    "static/media/genu.png": "/my-portfolio/static/media/genu.73370de718ca25ac5bfd.png",
+    "static/media/findABook.png": "/my-portfolio/static/media/findABook.1f1b0cf08a27e457fe0d.png",
+    "static/media/nerdherd.png": "/my-portfolio/static/media/nerdherd.47f7060dec292081b0af.png",
+    "static/media/portrait2.jpg": "/my-portfolio/static/media/portrait2.2360fc7b17a68f4e40f4.jpg",
+    "static/media/moss.jpg": "/my-portfolio/static/media/moss.6b1c166988c0ccc55651.jpg",
     "static/media/mail.png": "/my-portfolio/static/media/mail.8fa6c801aebe4ce7d97b.png",
     "static/media/KaylaFischerResume.pdf": "/my-portfolio/static/media/KaylaFischerResume.05919c84bd82cb04b33c.pdf",
     "index.html": "/my-portfolio/index.html",
-    "main.54990f0b.css.map": "/my-portfolio/static/css/main.54990f0b.css.map",
-    "main.880e2d7f.js.map": "/my-portfolio/static/js/main.880e2d7f.js.map"
+    "main.c3afc06f.css.map": "/my-portfolio/static/css/main.c3afc06f.css.map",
+    "main.918f7e1b.js.map": "/my-portfolio/static/js/main.918f7e1b.js.map"
   },
   "entrypoints": [
-    "static/css/main.54990f0b.css",
-    "static/js/main.880e2d7f.js"
+    "static/css/main.c3afc06f.css",
+    "static/js/main.918f7e1b.js"
   ]
 }
