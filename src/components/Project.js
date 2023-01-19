@@ -38,33 +38,36 @@ const Project = ({ project }) => {
             <div>{description}</div>
           </div>
           <div className="technologies"> Technologies: {technologies}</div>
-          <Button
-            className="button"
-            href={github}
-            target="_blank"
-            variant="dark"
-          >
-            Github
-          </Button>
-          <Button
-            className={`button ${name}`}
-            href={deploy}
-            target="_blank"
-            variant="dark"
-          >
-            Deployed
-          </Button>
-          <Button
-            className={`button ${name}`}
-            variant="dark"
-            onClick={handleShow}
-          >
-            My Role
-          </Button>
+          <div className="project-btn">
+            {" "}
+            <Button
+              className="button"
+              href={github}
+              target="_blank"
+              variant="dark"
+            >
+              Github
+            </Button>
+            <Button
+              className={`button ${name}`}
+              href={deploy}
+              target="_blank"
+              variant="dark"
+            >
+              Deployed
+            </Button>
+            <Button
+              className={`button ${name}`}
+              variant="dark"
+              onClick={handleShow}
+            >
+              My Role
+            </Button>
+          </div>
         </div>
       </div>
     </>
   );
-}
+};
 
 export default Project;

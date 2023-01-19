@@ -9,7 +9,7 @@ body {
   text-align: left;
   color: var(--secondary);
   background-image: linear-gradient(rgba(0, 0, 0, 0.747), rgba(0, 0, 0, 0.904)),
-    url("https://salmonfishingqueen.files.wordpress.com/2013/01/moss-up-close.jpg");
+    url("../src/images/moss.jpg");
 
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -31,7 +31,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.747), rgba(0, 0, 0, 0.904)),
-    url("https://salmonfishingqueen.files.wordpress.com/2013/01/moss-up-close.jpg");
+    url("../src/images/moss.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -49,7 +49,7 @@ header {
   width: 100%;
   padding: 10px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.267), rgba(0, 0, 0, 0.096)),
-    url("https://salmonfishingqueen.files.wordpress.com/2013/01/moss-up-close.jpg");
+    url("../src/images/moss.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -139,7 +139,6 @@ header {
 
 .project img {
   width: 30%;
-  max-width: 50%;
   margin: 50px;
 }
 
@@ -302,12 +301,11 @@ footer {
   bottom: 0;
   width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.747), rgba(0, 0, 0, 0.904)),
-    url("https://salmonfishingqueen.files.wordpress.com/2013/01/moss-up-close.jpg");
+    url("../src/images/moss.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
-
 
 footer a {
   padding: 5px;
@@ -355,16 +353,19 @@ footer a {
     margin-bottom: 10px;
   }
 
-
-
   .project {
     flex-direction: column-reverse;
   }
-  
-  .project img {
-    width: 90%;
+
+  .project-name, .project-btn{ 
+    text-align: center;
   }
 
+
+
+  .project img {
+    width: 85%;
+  }
 
   .description {
     font-size: medium;
@@ -419,10 +420,6 @@ footer a {
 
   .link {
     padding: 2px;
-  }
-
-  .project img {
-    width: 80%;
   }
 
   footer {
